@@ -1,0 +1,14 @@
+C:\Users\joint\rendu\RocketLeague\RocketLeague\bin\Debug\RocketLeague.exe.config
+C:\Users\joint\rendu\RocketLeague\RocketLeague\bin\Debug\RocketLeague.exe
+C:\Users\joint\rendu\RocketLeague\RocketLeague\bin\Debug\RocketLeague.pdb
+C:\Users\joint\rendu\RocketLeague\RocketLeague\obj\Debug\RocketLeague.csprojResolveAssemblyReference.cache
+C:\Users\joint\rendu\RocketLeague\RocketLeague\obj\Debug\MainWindow.g.cs
+C:\Users\joint\rendu\RocketLeague\RocketLeague\obj\Debug\App.g.cs
+C:\Users\joint\rendu\RocketLeague\RocketLeague\obj\Debug\RocketLeague_MarkupCompile.cache
+C:\Users\joint\rendu\RocketLeague\RocketLeague\obj\Debug\RocketLeague_MarkupCompile.lref
+C:\Users\joint\rendu\RocketLeague\RocketLeague\obj\Debug\MainWindow.baml
+C:\Users\joint\rendu\RocketLeague\RocketLeague\obj\Debug\RocketLeague.g.resources
+C:\Users\joint\rendu\RocketLeague\RocketLeague\obj\Debug\RocketLeague.Properties.Resources.resources
+C:\Users\joint\rendu\RocketLeague\RocketLeague\obj\Debug\RocketLeague.csproj.GenerateResource.Cache
+C:\Users\joint\rendu\RocketLeague\RocketLeague\obj\Debug\RocketLeague.exe
+C:\Users\joint\rendu\RocketLeague\RocketLeague\obj\Debug\RocketLeague.pdb

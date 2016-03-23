@@ -1,0 +1,171 @@
+﻿<Window x:Class="RocketLeague.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:RocketLeague"
+        mc:Ignorable="d"
+        Title="Rocket League Replay Extractor" Height="900" Width="1400">
+
+    <StackPanel Background="Black">
+        <StackPanel Orientation="Horizontal" Background="#FFF0F0F0" Height="25">
+            <Menu>
+                <MenuItem Header="_File">
+                    <MenuItem.Items>
+                        <MenuItem Header="_Open" Click="MenuItem_Click"/>
+                        <MenuItem Header="_Quit"/>
+                    </MenuItem.Items>
+                </MenuItem>
+            </Menu>
+        </StackPanel>
+        <StackPanel Orientation="Horizontal" Height="5"></StackPanel>
+
+        <StackPanel Orientation="Horizontal" HorizontalAlignment="Center">
+            <TextBlock Width="250" Text="0" TextAlignment="Center" FontSize="120" Name="team0score" FontFamily="Futura" TextWrapping="Wrap" Foreground="White" Height="179">
+                <TextBlock.Background>
+                    <ImageBrush ImageSource="assets/blue.png">
+                        <ImageBrush.Transform>
+                            <TransformGroup>
+                                <ScaleTransform/>
+                                <SkewTransform/>
+                                <RotateTransform/>
+                                <TranslateTransform X="6" Y="-5"/>
+                            </TransformGroup>
+                        </ImageBrush.Transform>
+                    </ImageBrush>
+                </TextBlock.Background>
+            </TextBlock>
+            <TextBlock Height="80" Width="250" Text="XvX" TextAlignment="Center" FontSize="48" Name="teamsize" FontFamily="Futura" TextWrapping="Wrap" Foreground="White"/>
+            <TextBlock Height="179" Width="250" Text="0" TextAlignment="Center" FontSize="120" Name="team1score" FontFamily="Futura" TextWrapping="Wrap" Foreground="White">
+                <TextBlock.Background>
+                   <ImageBrush ImageSource="assets/red.png" >
+                        <ImageBrush.Transform>
+                            <TransformGroup>
+                                <ScaleTransform/>
+                                <SkewTransform/>
+                                <RotateTransform/>
+                                <TranslateTransform X="6" Y="-5"/>
+                            </TransformGroup>
+                        </ImageBrush.Transform>
+                    </ImageBrush>
+                </TextBlock.Background>
+            </TextBlock>
+        </StackPanel>
+
+        <StackPanel Orientation="Horizontal" HorizontalAlignment="Center">
+            <TextBlock Height="50" Width="420" Text="Name" FontSize="32" FontFamily="Futura" Margin="20,0,0,0" TextWrapping="Wrap" Foreground="White"/>
+            <TextBlock Height="50" Width="150" Text="Score" FontSize="32" FontFamily="Futura" Margin="0,0,50,0" TextWrapping="Wrap" Foreground="White"/>
+            <TextBlock Height="50" Width="105" Text="Goals" FontSize="32" FontFamily="Futura" Margin="0,0,50,0" TextWrapping="Wrap" Foreground="White"/>
+            <TextBlock Height="50" Width="123" Text="Assists" FontSize="32" FontFamily="Futura" Margin="0,0,50,0" TextWrapping="Wrap" Foreground="White"/>
+            <TextBlock Height="50" Width="123" Text="Saves" FontSize="32" FontFamily="Futura" Margin="0,0,50,0" TextWrapping="Wrap" Foreground="White"/>
+            <TextBlock Height="50" Width="123" Text="Shots" FontSize="32" FontFamily="Futura" Margin="0,0,20,0" TextWrapping="Wrap" Foreground="White"/>
+        </StackPanel>
+        <StackPanel Orientation="Horizontal" Height="20"></StackPanel>
+
+        <StackPanel Orientation="Horizontal" HorizontalAlignment="Center">
+            <StackPanel.Background>
+                <ImageBrush ImageSource="assets/tab2.png" />
+            </StackPanel.Background>
+            <TextBlock Height="50" Width="420" Text="Name" FontSize="32" Name="t1p1" FontFamily="Futura" Margin="20,0,0,0" TextWrapping="Wrap" Foreground="#FF7BC3FD"/>
+            <TextBlock Height="50" Width="150" Text="Score" FontSize="32" Name="t1p1S" FontFamily="Futura" TextWrapping="Wrap" Margin="0,0,50,0" Foreground="#FF7BC3FD"/>
+            <TextBlock Height="50" Width="100" Text="Goals" FontSize="32" Name="t1p1G" FontFamily="Futura" TextWrapping="Wrap" Margin="0,0,50,0" Foreground="#FF7BC3FD"/>
+            <TextBlock Height="50" Width="123" Text="Assists" FontSize="32" Name="t1p1A" FontFamily="Futura" TextWrapping="Wrap" Margin="0,0,50,0" Foreground="#FF7BC3FD"/>
+            <TextBlock Height="50" Width="123" Text="Saves" FontSize="32" Name="t1p1Sa" FontFamily="Futura" TextWrapping="Wrap" Margin="0,0,50,0" Foreground="#FF7BC3FD"/>
+            <TextBlock Height="50" Width="123" Text="Shots" FontSize="32" Name="t1p1Sh" FontFamily="Futura" Margin="0,0,20,0" TextWrapping="Wrap" Foreground="#FF7BC3FD"/>
+        </StackPanel>
+        <StackPanel Orientation="Horizontal" Height="5"></StackPanel>
+
+        <StackPanel Orientation="Horizontal" HorizontalAlignment="Center">
+            <StackPanel.Background>
+                <ImageBrush ImageSource="assets/tab2.png" />
+            </StackPanel.Background>
+            <TextBlock Height="50" Width="420" Text="Name" FontSize="32" Name="t1p2" FontFamily="Futura" Margin="20,0,0,0" TextWrapping="Wrap" Foreground="#FF7BC3FD"/>
+            <TextBlock Height="50" Width="150" Text="Score" FontSize="32" Name="t1p2S" FontFamily="Futura" TextWrapping="Wrap" Margin="0,0,50,0" Foreground="#FF7BC3FD"/>
+            <TextBlock Height="50" Width="100" Text="Goals" FontSize="32" Name="t1p2G" FontFamily="Futura" TextWrapping="Wrap" Margin="0,0,50,0" Foreground="#FF7BC3FD"/>
+            <TextBlock Height="50" Width="123" Text="Assists" FontSize="32" Name="t1p2A" FontFamily="Futura" TextWrapping="Wrap" Margin="0,0,50,0" Foreground="#FF7BC3FD"/>
+            <TextBlock Height="50" Width="123" Text="Saves" FontSize="32" Name="t1p2Sa" FontFamily="Futura" TextWrapping="Wrap" Margin="0,0,50,0" Foreground="#FF7BC3FD"/>
+            <TextBlock Height="50" Width="123" Text="Shots" FontSize="32" Name="t1p2Sh" FontFamily="Futura" Margin="0,0,20,0" TextWrapping="Wrap" Foreground="#FF7BC3FD"/>
+        </StackPanel>
+        <StackPanel Orientation="Horizontal" Height="5"></StackPanel>
+
+        <StackPanel Orientation="Horizontal" HorizontalAlignment="Center">
+            <StackPanel.Background>
+                <ImageBrush ImageSource="assets/tab2.png" />
+            </StackPanel.Background>
+            <TextBlock Height="50" Width="420" Text="Name" FontSize="32" Name="t1p3" FontFamily="Futura" Margin="20,0,0,0" TextWrapping="Wrap" Foreground="#FF7BC3FD"/>
+            <TextBlock Height="50" Width="150" Text="Score" FontSize="32" Name="t1p3S" FontFamily="Futura" TextWrapping="Wrap" Margin="0,0,50,0" Foreground="#FF7BC3FD"/>
+            <TextBlock Height="50" Width="100" Text="Goals" FontSize="32" Name="t1p3G" FontFamily="Futura" TextWrapping="Wrap" Margin="0,0,50,0" Foreground="#FF7BC3FD"/>
+            <TextBlock Height="50" Width="123" Text="Assists" FontSize="32" Name="t1p3A" FontFamily="Futura" TextWrapping="Wrap" Margin="0,0,50,0" Foreground="#FF7BC3FD"/>
+            <TextBlock Height="50" Width="123" Text="Saves" FontSize="32" Name="t1p3Sa" FontFamily="Futura" TextWrapping="Wrap" Margin="0,0,50,0" Foreground="#FF7BC3FD"/>
+            <TextBlock Height="50" Width="123" Text="Shots" FontSize="32" Name="t1p3Sh" FontFamily="Futura" Margin="0,0,20,0" TextWrapping="Wrap" Foreground="#FF7BC3FD"/>
+        </StackPanel>
+        <StackPanel Orientation="Horizontal" Height="5"></StackPanel>
+
+        <StackPanel Orientation="Horizontal" HorizontalAlignment="Center">
+            <StackPanel.Background>
+                <ImageBrush ImageSource="assets/tab2.png" />
+            </StackPanel.Background>
+            <TextBlock Height="50" Width="420" Text="Name" FontSize="32" Name="t1p4" FontFamily="Futura" Margin="20,0,0,0" TextWrapping="Wrap" Foreground="#FF7BC3FD"/>
+            <TextBlock Height="50" Width="150" Text="Score" FontSize="32" Name="t1p4S" FontFamily="Futura" TextWrapping="Wrap" Margin="0,0,50,0" Foreground="#FF7BC3FD"/>
+            <TextBlock Height="50" Width="100" Text="Goals" FontSize="32" Name="t1p4G" FontFamily="Futura" TextWrapping="Wrap" Margin="0,0,50,0" Foreground="#FF7BC3FD"/>
+            <TextBlock Height="50" Width="123" Text="Assists" FontSize="32" Name="t1p4A" FontFamily="Futura" TextWrapping="Wrap" Margin="0,0,50,0" Foreground="#FF7BC3FD"/>
+            <TextBlock Height="50" Width="123" Text="Saves" FontSize="32" Name="t1p4Sa" FontFamily="Futura" TextWrapping="Wrap" Margin="0,0,50,0" Foreground="#FF7BC3FD"/>
+            <TextBlock Height="50" Width="123" Text="Shots" FontSize="32" Name="t1p4Sh" FontFamily="Futura" Margin="0,0,20,0" TextWrapping="Wrap" Foreground="#FF7BC3FD"/>
+        </StackPanel>
+        
+        <StackPanel Orientation="Horizontal" Height="25"></StackPanel>
+
+        <StackPanel Orientation="Horizontal" HorizontalAlignment="Center">
+            <StackPanel.Background>
+                <ImageBrush ImageSource="assets/tab.png" />
+            </StackPanel.Background>
+            <TextBlock Height="50" Width="420" Text="Name" FontSize="32" Name="t2p1" FontFamily="Futura" Margin="20,0,0,0" TextWrapping="Wrap" Foreground="#FFF6C171"/>
+            <TextBlock Height="50" Width="150" Text="Score" FontSize="32" Name="t2p1S" FontFamily="Futura" Margin="0,0,50,0" TextWrapping="Wrap" Foreground="#FFF6C171"/>
+            <TextBlock Height="50" Width="100" Text="Goals" FontSize="32" Name="t2p1G" FontFamily="Futura" Margin="0,0,50,0" TextWrapping="Wrap" Foreground="#FFF6C171"/>
+            <TextBlock Height="50" Width="123" Text="Assists" FontSize="32" Name="t2p1A" FontFamily="Futura" Margin="0,0,50,0" TextWrapping="Wrap" Foreground="#FFF6C171"/>
+            <TextBlock Height="50" Width="123" Text="Saves" FontSize="32" Name="t2p1Sa" FontFamily="Futura" Margin="0,0,50,0" TextWrapping="Wrap" Foreground="#FFF6C171"/>
+            <TextBlock Height="50" Width="123" Text="Shots" FontSize="32" Name="t2p1Sh" FontFamily="Futura" Margin="0,0,20,0" TextWrapping="Wrap" Foreground="#FFF6C171"/>
+        </StackPanel>
+        <StackPanel Orientation="Horizontal" Height="5"></StackPanel>
+
+        <StackPanel Orientation="Horizontal" HorizontalAlignment="Center">
+            <StackPanel.Background>
+                <ImageBrush ImageSource="assets/tab.png" />
+            </StackPanel.Background>
+            <TextBlock Height="50" Width="420" Text="Name" FontSize="32" Name="t2p2" FontFamily="Futura" Margin="20,0,0,0" TextWrapping="Wrap" Foreground="#FFF6C171"/>
+            <TextBlock Height="50" Width="150" Text="Score" FontSize="32" Name="t2p2S" FontFamily="Futura" Margin="0,0,50,0" TextWrapping="Wrap" Foreground="#FFF6C171"/>
+            <TextBlock Height="50" Width="100" Text="Goals" FontSize="32" Name="t2p2G" FontFamily="Futura" Margin="0,0,50,0" TextWrapping="Wrap" Foreground="#FFF6C171"/>
+            <TextBlock Height="50" Width="123" Text="Assists" FontSize="32" Name="t2p2A" FontFamily="Futura" Margin="0,0,50,0" TextWrapping="Wrap" Foreground="#FFF6C171"/>
+            <TextBlock Height="50" Width="123" Text="Saves" FontSize="32" Name="t2p2Sa" FontFamily="Futura" Margin="0,0,50,0" TextWrapping="Wrap" Foreground="#FFF6C171"/>
+            <TextBlock Height="50" Width="123" Text="Shots" FontSize="32" Name="t2p2Sh" FontFamily="Futura" Margin="0,0,20,0" TextWrapping="Wrap" Foreground="#FFF6C171"/>
+        </StackPanel>
+        <StackPanel Orientation="Horizontal" Height="5"></StackPanel>
+
+        <StackPanel Orientation="Horizontal" HorizontalAlignment="Center">
+            <StackPanel.Background>
+                <ImageBrush ImageSource="assets/tab.png" />
+            </StackPanel.Background>
+            <TextBlock Height="50" Width="420" Text="Name" FontSize="32" Name="t2p3" FontFamily="Futura" Margin="20,0,0,0" TextWrapping="Wrap" Foreground="#FFF6C171"/>
+            <TextBlock Height="50" Width="150" Text="Score" FontSize="32" Name="t2p3S" FontFamily="Futura" Margin="0,0,50,0" TextWrapping="Wrap" Foreground="#FFF6C171"/>
+            <TextBlock Height="50" Width="100" Text="Goals" FontSize="32" Name="t2p3G" FontFamily="Futura" Margin="0,0,50,0" TextWrapping="Wrap" Foreground="#FFF6C171"/>
+            <TextBlock Height="50" Width="123" Text="Assists" FontSize="32" Name="t2p3A" FontFamily="Futura" Margin="0,0,50,0" TextWrapping="Wrap" Foreground="#FFF6C171"/>
+            <TextBlock Height="50" Width="123" Text="Saves" FontSize="32" Name="t2p3Sa" FontFamily="Futura" Margin="0,0,50,0" TextWrapping="Wrap" Foreground="#FFF6C171"/>
+            <TextBlock Height="50" Width="123" Text="Shots" FontSize="32" Name="t2p3Sh" FontFamily="Futura" Margin="0,0,20,0" TextWrapping="Wrap" Foreground="#FFF6C171"/>
+        </StackPanel>
+        <StackPanel Orientation="Horizontal" Height="5"></StackPanel>
+
+        <StackPanel Orientation="Horizontal" HorizontalAlignment="Center">
+            <StackPanel.Background>
+                <ImageBrush ImageSource="assets/tab.png" />
+            </StackPanel.Background>
+            <TextBlock Height="50" Width="420" Text="Name" FontSize="32" Name="t2p4" FontFamily="Futura" Margin="20,0,0,0" TextWrapping="Wrap" Foreground="#FFF6C171"/>
+            <TextBlock Height="50" Width="150" Text="Score" FontSize="32" Name="t2p4S" FontFamily="Futura" Margin="0,0,50,0" TextWrapping="Wrap" Foreground="#FFF6C171"/>
+            <TextBlock Height="50" Width="100" Text="Goals" FontSize="32" Name="t2p4G" FontFamily="Futura" Margin="0,0,50,0" TextWrapping="Wrap" Foreground="#FFF6C171"/>
+            <TextBlock Height="50" Width="123" Text="Assists" FontSize="32" Name="t2p4A" FontFamily="Futura" Margin="0,0,50,0" TextWrapping="Wrap" Foreground="#FFF6C171"/>
+            <TextBlock Height="50" Width="123" Text="Saves" FontSize="32" Name="t2p4Sa" FontFamily="Futura" Margin="0,0,50,0" TextWrapping="Wrap" Foreground="#FFF6C171"/>
+            <TextBlock Height="50" Width="123" Text="Shots" FontSize="32" Name="t2p4Sh" FontFamily="Futura" Margin="0,0,20,0" TextWrapping="Wrap" Foreground="#FFF6C171"/>
+        </StackPanel>
+
+        <TextBox Grid.Row="1" Grid.Column="1" Grid.ColumnSpan="7" Grid.RowSpan="3" Name="txtEditor" x:FieldModifier="public" Visibility="Hidden">Text Here</TextBox>
+    </StackPanel>
+</Window>
